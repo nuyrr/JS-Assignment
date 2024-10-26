@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   </head>
+   <body>
+       Hello to JS
+       <script>
+        let score= prompt("Enter your score");
+        let grade= "A";
+       if(score>=90){
+          grade="A";
+       }else if(score>=80){
+        grade="B";
+       }else if(score>=70){
+        grade="C";
+       }else if(score>=60){
+       grade="D";
+       } 
+       else 
+       {
+       grade="F";
+       }
+       switch (grade) {
+        case "A":
+            alert("Great job for an A ");
+            break;
+        case "B":
+            alert("Good job B grade");
+            break;
+        case "C":
+            alert("You got C grade");
+            break;
+        case "D":
+            alert("You got D grade.");
+            break;
+        case "F":
+            alert("You got F grade.");
+            break;
+    }
+ </script>
+ </body>
+ </html>

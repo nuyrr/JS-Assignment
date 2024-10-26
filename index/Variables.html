@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    </head>
+    <body>
+        Hello to JS
+        <script>
+    let shape = prompt("Please Enter the shape: circle, rectangle or triangle");
+    const pie = 3.142;
+    if(shape=="circle"){
+       let r= prompt("Type radius");
+       r= Number(r);
+        let result=pie*r**2;
+        console.log(result);
+    }
+    if(shape=="rectangle"){
+        let l= prompt("Enter Length");
+        l=Number(l);
+        let w= prompt("Enter Width");
+        w=Number(w);
+        let result=l*w;
+        console.log(result);
+    }
+    if(shape=="triangle"){
+        let b = prompt("Enter base");
+         b = Number(b);
+         let h = prompt("Enter height");
+         h= Number(h);
+        let result=(b*h)/2;
+        console.log(result);
+    }
+    else(shape=="square")
+    {
+        let prompt=("Wrong Input Choose mentioned shapes");
+        console.log(prompt);
+    }
+        </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   </head>
+   <body>
+       Hello to JS
+       <script>
+
+     let booksdetail={
+        title : "Namal",
+        author: "Nemrah Ahmad",
+        year:"2018",
+        available: "True",
+     }
+     function borrowBook(){
+        if(booksdetail.available==true){
+            console.log("Details:" );
+            console.log("Title=" + booksdetail.title );
+            console.log("Author=" + booksdetail.author );
+            console.log("Year=" +booksdetail.year );
+            console.log("Available=" +booksdetail.available );
+             booksdetail.available = false;
+
+        }
+        else{
+            console.log("No It is already Borrowed");
+        }
+     }
+
+    function returnbook(){
+        if(booksdetail.available==false){
+             booksdetail.available=true;
+            console.log("Details:" );
+    console.log("Title=" + booksdetail.title );
+    console.log("Author=" + booksdetail.author );
+    console.log("Year=" +booksdetail.year );
+    console.log("Available=" +booksdetail.available );
+
+        }
+        else{
+            console.log("The Book is Returned");
+        }
+    }
+
+borrowBook();
+
+returnbook();
+
+</script>
+</body>
+</html>
